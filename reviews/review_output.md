@@ -1,0 +1,12 @@
+ici il y a plusieurs erreurs et maladresses à corriger :
+
+1. Il manque un espace après la définition des fonctions `def add_numbers(a,b)` , `def divide(a, b)`, `def greet(name)`.
+2. La méthode de la classe `Person` doit retourner une instance de la classe et non un string comme ci : `self = Person("Bob", "twenty five")`. Il faut donc changer cette ligne pour retourner l'instance créée : `return self`.
+3. Les variables globales doivent être déclarées avec un underscore (_) ou en majuscule si elles doivent être visibles dans tout le programme, mais dans ce cas `x`, `y`, et `g` sont déclarés sans underscore ni en majuscule alors qu'il est préférable de les déclarer avec un underscore (_) pour signifier qu'elles sont locales à ce fichier.
+4. Dans la méthode `greet()` de la classe Person, il y a une variable locale `name` mais il n'y a pas de définition précédente, donc on doit soit déclarer cette variable comme argument de la fonction ou lui donner une valeur par défaut.
+5. Il manque des espaces autour des opérateurs + et = dans la ligne : `result=a+b`. Il faut donc changer cette ligne pour `result = a + b` .
+6. Dans la déclaration de la classe Person, les variables `name` et `age` sont déclarées avec des types différents entre eux (`str` pour `name` et `int` pour `age`) alors que dans le constructeur de la classe on donne une chaîne de caractères à la variable `name`, mais un entier à la variable `age`. Il faut donc changer les types des variables ou corriger la valeur passée aux paramètres du constructeur.
+7. La méthode `greet()` de la classe Person ne doit pas afficher la chaîne "and I'm" avant le nom de l'âge car cela est incorrect dans les conventions de style anglais. Il faut donc changer cette ligne pour `print("Hi, my name is",self.name," and I am", self.age," years old")`.
+8. Dans la variable `p`, il y a un mixe entre chaîne de caractères et entier pour la propriété age, ce qui est incorrect. Il faut soit utiliser une chaîne de caractère pour toutes les propriétés ou des entiers.
+9. L'instruction import ne doit pas importer plusieurs modules sur une même ligne si ces modules ont des noms différents, il faut donc séparer l'importation en plusieurs lignes : `import os` et `import sys`.
+10. Le fichier doit avoir un nom avec une extension .py pour pouvoir être exécuté comme script Python.
