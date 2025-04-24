@@ -1,0 +1,4 @@
+anthropic_api_key: "anthropic-key"
+anthropic_model: "claude-2"
+
+ollama_model: "mistral"
