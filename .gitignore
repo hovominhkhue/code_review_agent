@@ -1,0 +1,31 @@
+# Environnements virtuels
+venv/
+.env/
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Fichiers temporaires ou système
+.DS_Store
+Thumbs.db
+
+# Fichiers d’éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers de configuration sensibles
+config.yaml
+
+# Résultats de génération
+reviews/review_output.md
+
+# Modèles Ollama téléchargés localement
+.ollama/
+
+# Logs ou débogage
+*.log
